@@ -35,7 +35,7 @@ ol, ul { list-style: none; }
 ////////////////////////////////////////*/
 
 
-html { 	background:url(../images/bg.jpg); }
+html { overflow: hidden;}
 
 body {
 	position:relative;
@@ -69,7 +69,7 @@ h1 { font-size:2.1em; }
 h2 { font-size:1.9em; }
 h3 { font-size:1.7em; }
 h4 { font-size:1.5em; }
-h5 { font-size:1.3em; }
+h5 { font-size:12px; }
 h6 { font-size:1.1em; }
 
 
@@ -135,14 +135,14 @@ td, th {
 	position:relative; }
 
 #wrapper {
-	width:780px;
+	width:720px;
 	float:right;
-	margin-bottom:30px;  }
+	  }
 
 .separator {
 	height:2px;
 	background:url(../images/sep_hor.png) repeat-x;
-	margin:25px 0;
+	margin-bottom: 5px;
 	clear:both; }
 
 .content>.separator { margin-left:40px; }
@@ -175,14 +175,13 @@ td, th {
 ////////////////////////////////////////*/
 
 #menu {
-	width:180px;
+	width:280px;
 	float:left;
-	background:url(../images/menu_bg.jpg) repeat-y right;
 	height:100%;
-	position:fixed;
+
 	padding-top:25px; }
 
-#menu ul { margin-top:50px; }
+#menu ul { margin-top:10px; }
 
 #menu ul li a {
 	height:44px;
@@ -314,7 +313,8 @@ a.nivo-prevNav {
 ////////////////////////////////////////*/
 
 ul.gallery_group li {
-	width:220px;
+	height: 20px;
+	display: inline;
 	float:left;
 	margin-left:40px;
 	background:url(../images/gallery_img_bg.png) left 150px no-repeat; /* shadow under thumbnail image (vertical postition is an image height + border (140px + 2x5px = 150px) */
@@ -322,14 +322,16 @@ ul.gallery_group li {
 
 
 ul.gallery_group li img{
-	width: 220px;
+	height: 20px;
 }
 
 .content{
 	padding: 20px;
+	height: 375px;
+	overflow-y: auto;
 }
 .usf{
-	width: 80px;
+	width: 60px;
 	vertical-align: middle;
 	margin-left: 10px;
 }
@@ -487,8 +489,9 @@ div.button>input:hover { background:url(../images/looking_glass_hover.png) cente
 
 
 .gallery_group{
-	display: table;
-	text-align: center;
-	width: 600px;
-	margin: 0 auto;
+
+}
+.content ul{
+	list-style-type: disc;
+	margin-left: 30px;
 }
